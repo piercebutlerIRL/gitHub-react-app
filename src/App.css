@@ -15,9 +15,13 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
@@ -46,6 +50,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  padding-top: 4.5rem;
 }
 
 /* Text Styles*/
@@ -200,12 +205,14 @@ img {
   display: inline-block;
   background: var(--light-color);
   color: #333;
-  padding: 0.4rem 1.3rem;
+  padding: 0.8rem 1.3rem;
   font-size: 1rem;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
+  font-size: 1.3rem;
   outline: none;
 }
 
@@ -292,10 +299,16 @@ img {
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
+  transition: all 0.2s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
   opacity: 0.8;
+}
+
+.btn:active {
+  transform: translateY(1px);
 }
 
 .bg-light,
@@ -310,10 +323,11 @@ img {
 /* Forms */
 input {
   margin: 1.2rem 0;
+  border-radius: 3px;
 }
 
 .form-text {
-  display: block;
+  display: b lock;
   margin-top: 0.3rem;
   color: #888;
 }
@@ -326,14 +340,8 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: 0.4rem;
-  font-size: 1.2rem;
+  padding: 0.6rem 0.4rem;
   border: 1px solid #ccc;
-}
-
-input[type='submit'],
-button {
-  font: inherit;
 }
 
 table th,
@@ -355,7 +363,8 @@ table th {
   z-index: 1;
   width: 100%;
   opacity: 0.9;
-  margin-bottom: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  position: fixed;
 }
 
 .navbar ul {
