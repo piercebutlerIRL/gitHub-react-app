@@ -116,7 +116,7 @@ img {
 
 /* Cards */
 .card {
-  padding: 2rem 1rem 1rem;
+  padding: 2rem;
   border: rgba(0, 0, 0, 0.08) 1px solid;
   box-shadow: 0 0rem 0.6rem rgba(161, 117, 117, 0.1);
 }
@@ -180,6 +180,10 @@ img {
 }
 .my-3 {
   margin: 3rem 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 /* Grid */
@@ -340,8 +344,24 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: 0.6rem 1rem;
+  padding: 1rem 1.5rem;
   border: 1px solid rgb(235, 235, 235);
+  outline: none;
+}
+input:hover,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+select:focus,
+textarea:focus input[type='text']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='date']:active,
+select:active,
+textarea:active {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 table th,
