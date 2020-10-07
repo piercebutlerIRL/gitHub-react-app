@@ -116,7 +116,7 @@ img {
 
 /* Cards */
 .card {
-  padding: 2rem;
+  padding: 2rem 0;
   border: rgba(0, 0, 0, 0.08) 1px solid;
   box-shadow: 0 0rem 0.6rem rgba(161, 117, 117, 0.1);
 }
