@@ -1,5 +1,3 @@
-const { SET_ALERT, REMOVE_ALERT } = require('../types');
-
 import { SET_ALERT, REMOVE_ALERT } from '../types';
 
 export default (state, action) => {
